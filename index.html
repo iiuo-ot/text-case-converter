@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text Case Converter — Online Tools</title>
+  <meta name="description"
+    content="Convert text to uppercase, lowercase, title case, and sentence case with this free online Text Case Converter tool.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../">Online Tools</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="../#tools">Tools</a></li>
+          <li><a href="../#categories">Categories</a></li>
+          <li><a href="../#about">About</a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <input class="search" type="search" id="toolSearch" placeholder="Search tools…" list="autocompleteList" />
+        <datalist id="autocompleteList"></datalist>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <h1>Text Case Converter</h1>
+    <p class="lead">Easily change your text into uppercase, lowercase, title case, or sentence case.</p>
+  </section>
+
+  <!-- Tool Section -->
+  <section class="container">
+    <div class="card tool-box">
+      <textarea id="textInput" placeholder="Type or paste your text here..." rows="10"></textarea>
+
+      <div class="btn-wrap">
+        <button class="btn primary" data-action="upper">UPPERCASE</button>
+        <button class="btn primary" data-action="lower">lowercase</button>
+        <button class="btn primary" data-action="title">Title Case</button>
+        <button class="btn primary" data-action="sentence">Sentence case</button>
+        <button class="btn secondary" id="copyBtn">Copy Text</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="container article-section">
+    <h2>Introduction</h2>
+    <p>The Text Case Converter is a free online utility designed to help you change the letter case of your text easily.
+      Whether you’re formatting titles, documents, or messages, this tool ensures your text appears exactly how you need
+      it.</p>
+
+    <h2>What is Text Case Converter Tool?</h2>
+    <p>The Text Case Converter Tool lets you instantly switch between uppercase, lowercase, title case, and sentence
+      case. It's especially useful for developers, writers, and students who want consistent text formatting without
+      manual effort.</p>
+
+    <h2>How to Use?</h2>
+    <ul>
+      <li>Type or paste your text in the box above.</li>
+      <li>Choose a case option — UPPERCASE, lowercase, Title Case, or Sentence case.</li>
+      <li>The converted text appears instantly in the same box.</li>
+      <li>Click “Copy Text” to copy the result to your clipboard.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>The Text Case Converter simplifies your text formatting tasks. With one click, you can adjust your text’s
+      appearance to suit professional documents, captions, or website content.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Online Tools</strong>
+        <div class="muted">© <span id="year"></span> ot.itisuniqueofficial.com</div>
+      </div>
+      <div class="footer-links">
+        <a href="/PRIVACY">Privacy</a>
+        <a href="https://github.com/orgs/iiuo-ot/discussions">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="/search.js"></script>
+</body>
+
+</html>
